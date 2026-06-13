@@ -1,0 +1,72 @@
+#calculator{
+  border: solid;
+  border-width: 1px;
+  border-color: rgba(255,255,255,0.15);
+  border-radius: 3px;
+  width: 200px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 30px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+#calculator:hover{
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 50px rgba(0,255,255,0.25);
+  
+}
+#display{
+  margin: 10px;
+  width: 85%;
+  font-size: 25px;
+  border: solid;
+  border-width: 1px;
+  border-color: red;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.2);
+  color: rgb(40, 45, 70);
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.button{
+  height: 45px;
+  width: 45px;
+  margin: 3px;
+  border: solid;
+  border-color: rgb(182, 46, 9);
+  border-width: 1px;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  color: blue;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  
+}
+.button:hover{
+  transform:scale(1.1);
+  box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+.button:active{
+  transform: scale(0.95);
+}
+
+.heading{
+  font-size: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: blue;
+  font-family:'Audiowide', cursive;
+
+}
+.heading:hover{
+  transform: scale(1.1);
+  text-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+.heading:active{
+  transform: scale(0.95);
+}
